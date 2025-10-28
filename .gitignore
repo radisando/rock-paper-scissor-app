@@ -6,6 +6,10 @@
 .python-version
 *.pyc
 **/build
+.venv/
+__pycache__/
+*.pyc
+
 
 # Ignore these macos generated files
 .DS_Store
@@ -30,6 +34,7 @@ data/
 models/
 *.joblib
 *.h5
+*.keras
 
 # Any pickle files
 *.pickle

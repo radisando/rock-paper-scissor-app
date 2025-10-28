@@ -1,9 +1,6 @@
 # Project Name
-- Document your project here
-- Description
-- Data used
-- Where your API can be accessed
-- ...
+Rock Paper Scissor Project
+(Description)
 
 # API
 Document main API endpoints here
