@@ -2,3 +2,6 @@
 2025-10-28 15:40:07,794 [INFO] root: Logging configured. Writing logs to: logs
 2025-10-28 15:40:08,697 [INFO] api: Starting RPS API - loading model
 2025-10-28 15:40:08,697 [INFO] api: Model loaded successfully.
+2025-10-29 15:41:56,984 [INFO] root: Logging configured. Writing logs to: logs
+2025-10-29 15:41:58,973 [INFO] api: Starting RPS API - loading model
+2025-10-29 15:41:58,974 [INFO] api: Model loaded successfully.

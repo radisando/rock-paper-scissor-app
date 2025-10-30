@@ -12,12 +12,17 @@ import tensorflow as tf
 from keras.models import load_model # Use direct keras imports
 from keras.applications.efficientnet import preprocess_input
 
-from tests.logging_config import configure_logging
-import logging
+from rock_paper_scissor.utils.logging_utils import configure_logging
+
+logger = configure_logging()
+
 
 # ---- CONFIG ---
-MODEL_PATH = os.getenv("MODEL_PATH", "/home/rafael/code/rock-paper-scissor-app/rock-paper-scissor_backend/models/best_model.keras")
-#IMG_SIZE = int(os.getenv("IMG_SIZE", "224"))
+#MODEL_PATH = os.getenv("MODEL_PATH", "/home/rafael/code/rock-paper-scissor-app/rock-paper-scissor_backend/models/best_model.keras")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.getenv("MODEL_PATH", os.path.join(BASE_DIR, "..", "models", "best_model.keras"))
+MODEL_PATH = os.path.abspath(MODEL_PATH)
+
 IMG_SIZE = tuple(map(int, os.getenv("IMG_SIZE", "224,224").split(",")))
 CLASS_NAMES = json.loads(os.getenv("CLASS_NAMES", '["rock","paper","scissors"]'))
 
@@ -29,11 +34,13 @@ def get_model():
     Load and cache the trained model.
     """
     global _model
+    print(f"🔍 Looking for model at: {MODEL_PATH}")
     if _model is None:
         if not os.path.exists(MODEL_PATH):
             raise FileNotFoundError(f"❌ Model not found at: {MODEL_PATH}")
         _model = load_model(MODEL_PATH, compile=False)
         print(f"✅ Model loaded from {MODEL_PATH}")
+
     return _model
 
 
