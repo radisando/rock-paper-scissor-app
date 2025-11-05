@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ✊🖐️✌️ Rock-Paper-Scissor: An AI Hand Gesture Classifier
 
 Rock-Paper-Scissor is a machine learning–powered app that recognizes hand gestures in images and predicts whether they represent rock, paper, or scissors.
@@ -23,20 +22,13 @@ Everything is fully Dockerized for seamless deployment and local development.
 This project is organized into two components: a backend (FastAPI) and a frontend (Streamlit).
 
 ```bash
-└── rock-paper-scissor-app/
-    ├── rock-paper-scissor_backend/      # FastAPI backend
-    │   ├── api/                         # API routes
-    │   │   └── main.py    
-    │   ├── models/                      # Trained model (.keras)
-    │   ├── rock_paper_scissor/          # Core logic: model loading & utils
-    │   ├── tests/                       # Unit tests for API
-    │   ├── Dockerfile                   # Backend Dockerfile
-    │   └── requirements.txt
-    │
-    └── rock-paper-scissor_frontend/     # Streamlit app
-        ├── app.py                       # Frontend entry point
-        ├── Dockerfile                   # Frontend Dockerfile
-        └── requirements.txt
+.
+├── app.py
+├── Dockerfile
+├── models
+│   └── best_model.keras
+├── README.md
+└── requirements.txt
 ```
 
 ---
@@ -129,6 +121,7 @@ streamlit run app.py
 Web Interface (Streamlit):
 
 ( tbd ... screenshot image here!)
+
 =======
 # ✊🖐️✌️ Rock-Paper-Scissor: An AI Hand Gesture Classifier
 
