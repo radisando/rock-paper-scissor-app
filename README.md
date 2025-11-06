@@ -1,4 +1,4 @@
-# ✊🖐️✌️ Rock-Paper-Scissor: An AI Hand Gesture Classifier
+# ✊🖐️✌️ Rock-Paper-Scissors App (AI gesture classifier)
 - Rock-Paper-Scissor is a machine learning–powered web app that recognizes hand gestures in images, predicts whether they represent rock, paper, or scissors and lets user play against the machine.
 
 - Originally built with a FastAPI backend for inference and fully Dockerized for local deployment, the project has since been streamlined and deployed on Hugging Face Spaces using Streamlit — simplifying hosting, reducing infrastructure overhead, and making the app instantly accessible online.
@@ -72,4 +72,5 @@
 [Try the App!](https://huggingface.co/spaces/radisando/rock-paper-scissor-app)
 
 ![portfolio](https://github.com/user-attachments/assets/7e010fd6-74b1-4926-a1e6-3f0c1e0d8f88)
+
 
