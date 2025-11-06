@@ -6,3 +6,5 @@ pandas
 matplotlib
 tensorflow==2.16.2   # only if you must run TF in the space (can be heavy)
 huggingface-hub
+opencv-python
+python-multipart
